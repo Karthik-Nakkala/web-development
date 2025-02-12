@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Carousel</title>
+    <style>
+        .carousel-container {
+            position: relative;
+            width: 80%;
+            max-width: 800px;
+            margin: auto;
+            overflow: hidden;
+        }
+        .carousel-slide {
+            display: flex;
+            transition: transform 0.2s ease-in-out;
+        }
+        .carousel-slide img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .carousel-indicators {
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            justify-content: center;
+        }
+        .carousel-indicators span {
+            width: 10px;
+            height: 10px;
+            background-color: #fff;
+            border-radius: 50%;
+            margin: 0 5px;
+            cursor: pointer;
+            opacity: 0.5;
+        }
+        .carousel-indicators span.active {
+            background-color: #000;
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+
+<div class="carousel-container">
+    <div class="carousel-slide">
+        <img src="public/images/dabang delhi.avif" alt="Image 1">
+        <img src="public/images/telugu titans.jpg" alt="Image 2">
+        <img src="public/images/haryana.png" alt="Image 3">
+        <img src="public/images/u mumba.avif" alt="Image 4">
+    </div>
+    <div class="carousel-indicators">
+        <span class="active"></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</div>
+
+<script>
+    const slide = document.querySelector('.carousel-slide');
+    const images = document.querySelectorAll('.carousel-slide img');
+    const indicators = document.querySelectorAll('.carousel-indicators span');
+
+    let counter = 0;
+    const size = images[0].clientWidth;
+
+    function changeSlide() {
+        slide.style.transform = 'translateX(' + (-size * counter) + 'px)';
+        indicators.forEach((indicator, index) => {
+            indicator.classList.remove('active');
+            if (index === counter) {
+                indicator.classList.add('active');
+            }
+        });
+    }
+
+    function autoSlide() {
+        counter++;
+        if (counter >= images.length) {
+            counter = 0;
+        }
+        changeSlide();
+    }
+
+    setInterval(autoSlide, 3000); // Change image every 3 seconds
+
+    indicators.forEach((indicator, index) => {
+        indicator.addEventListener('click', () => {
+            counter = index;
+            changeSlide();
+        });
+    });
+</script>
+
+</body>
+</html>

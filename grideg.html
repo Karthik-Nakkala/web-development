@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+
+    <html lang="en">
+        <head>
+            <title>Karthik-Aadhar</title>
+            <link rel="shortcut icon" href="public/images/aadhar logo.ico">
+            <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+            <meta name="viewport" content="width=device-width,initial-scale=1">
+            <meta http-equiv="refresh" content="100">
+            <meta http-equiv="content-type" content="text/html;charset=UTF-8">
+            <style type="text/css">
+                @media screen and (orientation:landscape){ 
+                header,nav,main,aside,footer{
+                    border: 1px solid black;
+                    margin: 10px;
+                }
+                body{
+                    display: grid;
+                    grid-template-columns: 2fr 8fr 2fr;
+                    border: 1px solid black;
+                    height: 100vh;
+                    text-align: center;
+                    font-size: 27px;
+                    margin: 10px;
+                    padding: 2px;
+                }
+                header{
+                    grid-row: 1;
+                    grid-column: 1/4;
+                    
+                }
+                nav{
+                    grid-row: 2;
+                    grid-column: 1;
+                    background-color: aqua;
+                }
+                main{
+                    grid-row: 2;
+                    grid-column: 2;
+                }
+                aside{
+                    grid-row: 2;
+                    grid-column: 3;
+                    background-color: coral;
+                }
+                footer{
+                    grid-row: 3;
+                    grid-column: 1/4;
+                }
+            }
+            @media screen and (orientation:portrait){
+               
+                header,nav,main,aside,footer{
+                    border: 1px solid black;
+                    margin: 10px;
+                }
+                body{
+                    display: grid;
+                    grid-template-columns: 2fr 8fr 2fr;
+                    border: 1px solid black;
+                    
+                    text-align: center;
+                    font-size: 27px;
+                    margin: 10px;
+                    padding: 2px;
+                }
+                header{
+                    grid-row: 1;
+                    grid-column: 1/4;
+                }
+                nav{
+                    grid-row: 2;
+                    grid-column: 1/4;
+                    background-color: aqua;
+                }
+                main{
+                    grid-row: 3;
+                    grid-column: 1/4;
+                    height: 55vh;
+                }
+                aside{
+                    grid-row: 4;
+                    grid-column: 1/4;
+                    background-color: coral;
+                }
+                footer{
+                    grid-row: 5;
+                    grid-column: 1/4;
+                }
+            }
+            </style>
+            </head>
+            <body>
+                <header>
+                    header
+                </header>
+                <nav>
+                    nav
+                </nav>
+                <main>
+                    main
+                </main>
+                <aside>
+                    aside
+                </aside>
+                <footer>
+                    footer
+                </footer>
+            </body>
+            </html>    

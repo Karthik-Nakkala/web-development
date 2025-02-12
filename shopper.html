@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Shopper</title>
+    <link rel="shortcut icon" href="public/images/netflix lg.ico">
+    <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta http-equiv="refresh" content="200">
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8">
+    <style type="text/css">
+        @media screen and (orientation:landscape){ 
+       header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+       }
+       nav *{
+        margin-left: 20px;
+        font-size: 133%;
+       }
+       aside *{
+        margin-left: 17px;
+        font-size: 133%;
+       }
+       .bi-list{
+        display: none;
+       }
+    }
+    @media screen and (orientation:portrait){
+        nav,aside{
+            display: none;
+        }
+        header{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
+        
+    </style>
+</head>
+
+<body>
+    <header>
+    <div style="font-weight: bold; margin-left: 4%; font-size: 230%;">
+        Shopper.
+    </div>
+    <nav>
+        <span>Home</span>
+        <span>Catelog</span>
+        <span>Shop</span>
+        <span>Pages</span>
+        <span>Blog</span>
+        <span>Docs</span>
+    </nav>
+    <aside>
+        <span class="bi bi-search"></span>
+        <span class="bi bi-person"></span>
+        <span class="bi bi-heart"></span>
+        <span class="bi bi-cart"></span>
+        
+    </aside>
+    <span class="bi bi-list" style="font-size: 200%; margin-top:1% ;"></span>
+    </header>
+</body>
+
+</html>

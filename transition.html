@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+
+    <html lang="en">
+        <head>
+            <title></title>
+            <link rel="shortcut icon" href="public/images/netflix lg.ico">
+            <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+            <meta name="viewport" content="width=device-width,initial-scale=1">
+            <meta http-equiv="refresh" content="200">
+            <meta http-equiv="content-type" content="text/html;charset=UTF-8">
+            <style type="text/css">
+                
+                
+                @keyframes mover{
+                    0%{
+                        transform: translateX(1200%);
+                    }
+                    
+                    100%{
+                        transform: translateX(-1200%);
+                    }
+                }
+                .nithin{
+                    animation: mover 9s infinite;
+                    
+                }
+                .nithin{
+                    display: none;
+                }
+                .info{
+                    border: 2px dashed green;
+                    padding: 20px;
+                    margin: 10px;
+                    width: 300px;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    transition: 3s;
+                }
+                #text{
+                    border: 2px dashed green;
+                    padding: 20px;
+                    margin: 10px;
+                    width: 300px;
+                    transition: 3s;
+                }
+                .transit:hover{
+                    transform: translate(500px);
+                    transition-timing-function: steps(30);
+                    
+                }
+                .transit{
+                    transition: 1s;
+                }
+            </style>
+            <script type="text/javascript">
+                function showmore(){
+                    const k=document.getElementById("text");
+                    const bun=document.getElementById("btn-content");
+                    if(text.classList.contains("info")){
+                        text.classList.remove("info");
+                        button.textContent="Read.less";
+                    }
+                    else{
+                        text.classList.add("info");
+                        button.textContent="Read_more";
+                    }
+                }
+            </script>
+        </head>
+        <body >
+           <div style="display: flex; justify-content: center; align-items: center;">
+            <div style="font-size: 20px;" class="nithin">
+                jai NITHIN sir
+            </div>
+            <p class="info" id="text">
+                Lorem ipsum dolor sit amet consectetur 
+                adipisicing elit. Sapiente veniam autem 
+                eveniet laudantium. Quae, exercitationem u
+                t mollitia architecto velit tenetur rerum, 
+                eius dolores asperiores assumenda iusto 
+                blanditiis in commodi labore.
+                Lorem ipsum dolor sit amet consectetur 
+                adipisicing elit. Sapiente veniam autem 
+                eveniet laudantium. Quae, exercitationem u
+                t mollitia architecto velit tenetur rerum, 
+                eius dolores asperiores assumenda iusto 
+                blanditiis in commodi labore.
+                Lorem ipsum dolor sit amet consectetur 
+                adipisicing elit. Sapiente veniam autem 
+                eveniet laudantium. Quae, exercitationem u
+                t mollitia architecto velit tenetur rerum, 
+                eius dolores asperiores assumenda iusto 
+                blanditiis in commodi labore.Lorem ipsum dolor sit amet consectetur 
+                adipisicing elit. Sapiente veniam autem 
+                eveniet laudantium. Quae, exercitationem u
+                t mollitia architecto velit tenetur rerum, 
+                eius dolores asperiores assumenda iusto 
+                blanditiis in commodi labore.
+            </p>
+            
+            <button onclick="showmore()" id="btn-content">READ_MORE</button>
+        </div>
+        <div style="border: 1px solid green; background-color: green; width: 200px; height: 200px; text-align: center;line-height: 200px; color: white;" class="transit">
+            transition property
+        </div>
+            
+        </body>
+        </html>        

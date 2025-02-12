@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+    <html lang="en">
+        <head>
+            <title></title>
+            <link rel="shortcut icon" href="public/images/netflix lg.ico">
+            <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+            <meta name="viewport" content="width=device-width,initial-scale=1">
+            <meta http-equiv="refresh" content="200">
+            <meta http-equiv="content-type" content="text/html;charset=UTF-8">
+            <style type="text/css">
+               
+            </style>
+            <script type="text/javascript">
+                function set(){
+                    console.log("set activated");
+                    let img=document.querySelector("img");
+        
+                    img.style.width="100%";
+                    img.style.height="100%";
+                    
+                }
+                function unset(){
+                    const k=document.querySelector("img");
+                    k.style.width="400px";
+                    k.style.height="300px";
+                    k.style.transition="3s";
+                }
+                function expand(){
+
+                }
+
+            </script>
+        </head>
+        <body style="display: flex; justify-content: center;  align-items: center; height: 100vh;">
+           
+            <img src="public/images/doctor image meeing.jpg" width="400px" height="300px" onmouseover="set()" onmouseout="unset()">
+            <p onclick="expand()"style="border: 1px dotted green;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                Nisi neque possimus laboriosam quam veritatis dolorem tempora eaque temporibus aperiam dignissimos explicabo,
+                dolorum nostrum, numquam quo similique earum? Ullam, quod vel?
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                Nisi neque possimus laboriosam quam veritatis dolorem tempora eaque temporibus aperiam dignissimos explicabo,
+                dolorum nostrum, numquam quo similique earum? Ullam, quod vel?
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                Nisi neque possimus laboriosam quam veritatis dolorem tempora eaque temporibus aperiam dignissimos explicabo,
+                dolorum nostrum, numquam quo similique earum? Ullam, quod vel?
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                Nisi neque possimus laboriosam quam veritatis dolorem tempora eaque temporibus aperiam dignissimos explicabo,
+                dolorum nostrum, numquam quo similique earum? Ullam, quod vel?
+            </p>
+           
+           
+           
+        </body>
+    </html>    

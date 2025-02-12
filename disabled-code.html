@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Output</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <style>
+        textarea::disabled{
+            cursor: not-allowed;
+        }
+        .vattakai:checked + span{
+            color: green;
+        }
+        .vattakai~button{
+            display: none;
+        }
+        .vattakai:checked~button{
+            display: block;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="d-flex justify-content-center mt-5">
+       <textarea >
+           vattakai
+       </textarea>
+    </div>
+    <div class="">
+        <input type="checkbox" class="vattakai">
+        <span>Accept</span>
+        <br>
+        <button >Submit</button>
+    </div>
+    
+</body>  
+</html>      

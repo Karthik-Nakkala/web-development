@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>NETFLIX</title>
+    <link rel="shortcut icon" href="public/images/netflix lg.ico">
+    <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Clicker+Script&display=swap">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta http-equiv="refresh" content="200">
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8">
+
+    <style>
+        .front-warriers {
+            display: flex;
+            height: 100vh;
+            width: 100%;
+        }
+    
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 205px;
+            height: 100%;
+            background-color: violet;
+            border-radius: 20px;
+            z-index: 1000;
+            padding-top: 30px;
+            flex-shrink: 0; /* Prevent nav from shrinking */
+        }
+    
+        nav span {
+            margin-top: 100px;
+        }
+    
+        .karthik {
+            font-size: 20px;
+            letter-spacing: 3px;
+            font-weight: bold;
+            position: relative;
+            color: rgb(34, 0, 255);
+            margin-left: 20px;
+        }
+    
+        .K {
+            font-family: 'Clicker Script', cursive;
+            font-size: 36px;
+            position: relative;
+        }
+    
+        .K::before {
+            content: '';
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            border-bottom: 5px solid #074b8f;
+            border-left: 5px solid #18ec4d;
+            left: -20px;
+            bottom: -10px;
+        }
+    
+        .karthik::after {
+            content: '';
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            border-top: 5px solid #074b8f;
+            border-right: 5px solid #18ec4d;
+            right: -20px;
+            top: -10px;
+        }
+    
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+    
+        ul li {
+            margin-top: 20px;
+        }
+    
+        a:hover {
+            color: darkturquoise;
+            background-color: bisque;
+            border-radius: 10px;
+            padding: 10px;
+        }
+    
+        a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            border-bottom: 1px solid gray;
+            padding: 5px;
+        }
+    
+        .active {
+            color: rgb(6, 115, 211);
+        }
+    
+        .home-section,.sec2 {
+            background-color: #6A80B9;
+            border-radius: 20px;
+            padding: 20px;
+            margin-left: 230px; /* Leave space for the fixed nav */
+            flex-grow: 1;
+            flex-shrink: 1;
+            min-width: 0; /* Prevent overflow */
+          
+        }
+    
+        .karthik-nakkala {
+            font-family: 'Clicker Script', cursive;
+            font-size: 48px;
+            font-weight: 700;
+            color: #14e088;
+        }
+    
+        button:hover {
+            transform: scale(1.15);
+            cursor: pointer;
+        }
+    
+        .img-parent {
+            position: relative;
+        }
+    
+        .karthik-img {
+            width: 331px;
+            height: 470px;
+            border-radius: 20px;
+            position: absolute;
+            border-bottom: 5px solid #ab13ad; 
+            border-left: 5px solid #ab13ad;
+            right: 40px;
+            top: -10px;
+        }
+        .sec3{
+            background-color: #F6C794;
+            border-radius: 20px;
+            padding: 20px;
+            margin-left: 230px; /* Leave space for the fixed nav */
+            flex-grow: 1;
+            flex-shrink: 1;
+            min-width: 0; 
+        }
+        .portfolio-section{
+            background-color: #FFF6B3;
+            border-radius: 20px;
+            padding: 20px;
+            margin-left: 230px; /* Leave space for the fixed nav */
+            flex-grow: 1;
+            flex-shrink: 1;
+            min-width: 0; 
+        }
+        .contact-section{
+            background-color: rgb(206, 143, 143);
+            border-radius: 20px;
+            padding: 20px;
+            margin-left: 230px; /* Leave space for the fixed nav */
+            flex-grow: 1;
+            flex-shrink: 1;
+            min-width: 0; 
+        }
+    </style>
+    
+</head>
+<body>
+    <div class="front-warriers" id="front-warriers">
+        <nav style="background-color: #d717ad; border-radius: 20px; width: 201px; margin-left: 20px;">
+           <span style="margin-left: 47px; margin-top: 30px; display: inline-block;" class="karthik">
+            <span class="K">PW iOi</span>
+           </span>
+           <ul style="margin-top: 160px;">
+               
+           <li><a href="#front-warriers" class="active"><span class="bi bi-house "> &nbsp;HOME</span></a></li>
+           <li><a href="#about-section"><span class="bi bi-person  "> &nbsp;ABOUT &nbsp;Me</span></a></li>
+           <li><a href="#services-section"><span class="bi bi-list  "> &nbsp;SERVICE</span></a></li>
+           <li><a href="#portfolio-section"><span class="bi bi-briefcase  "> &nbsp;PORTFOLIO</span></a></li>
+           <li><a href="#contact-section"><span class="bi bi-chat  "> &nbsp;CONTACT</span></a></li>
+           </ul>
+        </nav>
+        <section style="background-color: rgb(19, 112, 135); border-radius: 20px; margin-left: 230px;" class="home-section">
+            <div style="margin-top: 150px; margin-left: 70px;">
+            <div style="font-size:34px; font-weight: bold; color: white; margin: 15px">Hello, my name is <span class="karthik-nakkala">Karthik Nakkala</span></div>
+            <div style="font-size:30px; font-weight: bold; color: white; margin: 15px">I' m a <span style="color: #4c0466">Web Developer</span></div>
+            <div style="font-size:20px; font-weight:; color: white; margin-bottom: 70px;">I'm a Frontend-webdeveloper and I'm a C-programmer</div>
+            <div ><button style="padding: 12px 35px; background-color: #07a02d; font-size: 16px; font-weight: 500; color: white; border-radius: 40px; display: inline-block; white-space: nowrap; transition: all 0.3s ease;">Hire Me</button> </div>
+            </div>
+            <div class="img-parent">
+            <img src="public/images/hd karthik image.png" style="width: 331px; height: 470px; border-radius: 20px;margin-right: -50px; margin-top: -350px; display: inline-bock;" class="karthik-img">
+            </div>
+            
+
+        </section>
+        
+    </div>
+    <section class="sec2">
+        <section class="about-section" id="about-section">
+            <h2>About Me</h2>
+            <div class="bio">
+                <h3>Karthik Nakkala</h3>
+                <p>Hello! I'm <strong>Karthik Nakkala</strong>, a dynamic and passionate Web Developer who is trying for bringing digital solutions to real world problems. With a strong foundation in frontend technologies, I was really excited to keep my creativity in UI design that for smooth user experiences.I love problem solving, I will not say I'M best problem solver but I might say I'M one of the finest problem solver,  I began my coding journey with soo much curiosity, and i surely confirm this the comming days are going to be the days where innovation is going to meet creativity.</p>
+            </div>
+            <div class="skills">
+                <h3>Skills</h3>
+                <ul>
+                    <li><i class="bi bi-code-slash"></i> HTML, CSS</li>
+                    <li><i class="bi bi-pencil-square"></i> UI/UX Design</li>
+                    <li><i class="bi bi-code"></i>C-Programmer</li>
+                </ul>
+            </div>
+            <div class="education">
+                <h3>Education</h3>
+                <p>I had Completed my Class 10th with 584 marks out of 600 marks.</p>
+                <p>I had completed my class 12th from one of the finest colleage in Andhra Pradesh, RGUKT Idupulapaya(Rajiv Gandhi University Of Knowledge And technologies) famously called IIIT idupulapaya.</p>
+                <p>At present,I'M pursuing my BS degree from IIT-MADRAS and currently I'M in my first year.</p>
+            </div>
+            <div class="interests">
+                <h3>Interests</h3>
+                <p>Beyond coding, I love to to explore New Technologies, a Music lover,a cricket lover, and a nature lover. With the help of these interests I have been inspired in my work.</p>
+                <p>favourite book :- MAHABHARAT and proud to be say I'M a big Krishna Lover. Jai SHRI KRISHNA.</p>
+                
+            </div>
+            <div class="contact">
+                <h3>Contact</h3>
+                <p>Let's connect and create something amazing together! You can reach me at:</p>
+                <p>Email: <a href="mailto:karthiknakkala15@gmail.com">karthiknakkala15@gmail.com</a></p>
+                <p>LinkedIn: <a href="https://www.linkedin.com/in/karthik-nakkala-528a32340" target="_blank">linkedin.com/in/karthik</a></p>
+            </div>
+            <div class="call-to-action">
+                <p>I'm always open to exciting projects and opportunities. Feel free to reach out and let's make magic happen!</p>
+            </div>
+        </section>
+    </section>   
+    <section class="sec3">
+        <section class="services-section" id="services-section">
+            <h2>Services</h2>
+            <div class="service-category">
+                <div class="service">
+                    <i class="bi bi-code-slash"></i>
+                    <h3>Web Development</h3>
+                    <p>Building responsive and dynamic websites using the latest web technologies. Whether it's a portfolio, e-commerce site, or a custom web application, I've got you covered.</p>
+                </div>
+                <div class="service">
+                    <i class="bi bi-brush"></i>
+                    <h3>UI/UX Design</h3>
+                    <p>Designing user-friendly interfaces with a focus on usability and aesthetics. I create designs that not only look great but also provide a seamless user experience.</p>
+                </div>
+                
+                <div class="service">
+                    <i class="bi bi-bullseye"></i>
+                    <h3>SEO Optimization</h3>
+                    <p>Improving your website's visibility on search engines through effective SEO strategies. I help your website rank higher and attract more organic traffic.</p>
+                </div>
+            </div>
+            <div class="contact-cta">
+                <p>Interested in working with me? Let's bring your ideas to life. <a href="mailto:karthik@example.com">Get in Touch</a> or <a href="contact.html">Request a Quote</a>.</p>
+            </div>
+        </section>
+    </section>
+        <section class="portfolio-section" id="portfolio-section">
+            <h2>My Portfolio</h2>
+            <div class="portfolio-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="web">Web Development</button>
+                <button class="filter-btn" data-filter="design">Design</button>
+            </div>
+            <div class="portfolio-items">
+                <div class="portfolio-item" data-category="web">
+                    <h3 style="text-decoration: underline;">SBI Interface</h3>
+                    <img src="public/images/sbi img.jpg" alt="Project 1" style="height: 30px;width: 50px;">
+                    <p>I had build the whole interface of State Bank Of India website,Have a look at it.</p>
+                    <a href="sbi.html" target="_blank" style="color: #086acc;">SBI Project</a>
+                    <a href="https://github.com/karthik/project1" target="_blank" style="color: #086acc;">GitHub Repo</a>
+                </div>
+                <hr>
+                <div class="portfolio-item" data-category="mobile" style="margin-top: 20px;">
+                    <img src="public/images/iit madras logo.svg" alt="iit madras" style="height: 45px;width: 70px;">
+                    <h3 style="text-decoration: underline;">IIt madras BS degree Interface</h3>
+                    <p>I had build my own degree colleage website,have a look at it</p>
+                    <a href="iit madras.html" target="_blank" style="color: #086acc;">IIT Madras Project</a>
+                    <a href="https://github.com/karthik/project2" target="_blank" style="color: #086acc;">GitHub Repo</a>
+                </div>
+                <hr>
+                <div class="portfolio-item" style="margin-top: 20px;">
+                    <div style="display: flex; flex-direction: row; ">
+                    <img src="public/images/pw pharma.jpg" alt="PW-Pharma" style="height: 45px;width: 47px; border-radius: 1200px;">
+                    <h3 style="text-decoration: underline;">PW PHARMA</h3>
+                    </div>
+                    <p>I and my friend Mr.Vaddam_Karthik both together build a full fledged website for our hackthon competition</p>
+                    <a href="index.html" target="_blank" style="color: #086acc;">PW-PHARMA project</a>
+                    <a href="" target="_blank" style="color: #086acc;">GitHub Repo</a>
+                </div> 
+                <!-- inka add cheyyi bayya  -->
+            </div>
+            <div class="contact-cta">
+                <p>Interested in my work? Let's collaborate! <a href="mailto:karthiknakkala15@gmail.com" style="color: rgb(176, 12, 225);">Get in Touch</a>.</p>
+            </div>
+        </section>
+        <section class="contact-section" id="contact-section">
+            <h2>Contact Me</h2>
+            <form action="https://example.com/submit-form" method="post">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit">Send Message</button>
+            </form>
+            <div class="direct-contact">
+                <p>Email: <a href="mailto:karthiknakkala15@gmail.com">karthiknakkala15@gmail.com</a></p>
+                 <p>Phone: <a href="tel:+917093179378">+91 7093179378</a></p>
+                  <p>Location: Bengaluru, India</p> 
+                </div>
+                 <div class="social-media"> 
+                    <a href="https://www.linkedin.com/in/karthik-nakkala-528a32340" target="_blank"><i class="bi bi-linkedin"></i></a>
+                     <a href="https://twitter.com/karthik" target="_blank"><i class="bi bi-twitter"></i></a>
+                      <a href="https://github.com/karthik" target="_blank"><i class="bi bi-github"></i></a>
+                     </div>
+                      <div class="call-to-action">
+                         <p>I'm always open to exciting projects and opportunities. Feel free to reach out and let's make magic happen!</p> 
+                        </div>
+                     </section>
+        
+        
+    
+    
+    
+</body>     

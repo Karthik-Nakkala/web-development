@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        span {
+
+            border: 2px solid black;
+            padding: 10px;
+            width: 100px;
+            display: inline-block;
+            font-size: 20px;
+            text-align: center;
+        }
+
+        @media screen and (min-width:600px) {
+
+            nav {
+                display: flex;
+                justify-content: space-between;
+            }
+
+        }
+
+        @media screen and (max-width:599px) {
+            nav {
+                display: flex;
+                flex-direction: column;
+            }
+
+            span {
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <span>About</span>
+        <span>Home</span>
+        <span>Contact</span>
+        <span>Help</span>
+    </nav>
+</body>
+
+</html>

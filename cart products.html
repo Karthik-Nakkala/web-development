@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PW Pharma Products</title>
+    <link rel="shortcut icon" href="public/images/netflix lg.ico">
+    <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <style type="text/css">
+        .product {
+            text-align: center;
+            margin: 10px;
+        }
+        .product img {
+            display: block;
+            margin: auto;
+        }
+        .cart-counter {
+            position: absolute;
+            top: -10px;
+            right: 0;
+            background: red;
+            color: white;
+            border-radius: 50%;
+            padding: 5px 10px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <h2>PW PHARMA PRODUCTS</h2>
+    <input type="text" placeholder="Search" size="70" style="border-radius: 10px; margin-left: 350px; margin-bottom: 20px; padding: 7px;">
+    <button class="bi bi-search" style="border-radius: 9px; padding: 7px;"></button>
+    <div style="position: relative; display: inline-block; margin-left: 240px;">
+        <span class="bi bi-cart" style="font-size: 40px; position: relative;">
+            <span id="cart-counter" class="cart-counter" style="display: none;">0</span>
+        </span>
+    </div>
+    <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px;">
+        <!-- Product 1 -->
+        <div class="product">
+            <img src="public/images/pharma1.jpg" alt="Aspirin" width="180" height="270">
+            <div>
+                <span style="color: goldenrod;">
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                </span>
+                <span>4.1|(2.6k)</span>
+            </div>
+            <div>Aspirin</div>
+            <div style="font-weight: bold;">₹ 899 <strike>₹1999</strike> </div>
+            <button class="btn btn-primary" onclick="addToCart('Aspirin')">Add To Cart</button>
+        </div>
+        <!-- Product 2 -->
+        <div class="product">
+            <img src="public/images/pharma2.jpg" alt="Amoxicillin" width="180" height="270">
+            <div>
+                <span style="color: goldenrod;">
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                </span>
+                <span>4.0|(2.6k)</span>
+            </div>
+            <div>Amoxicillin</div>
+            <div style="font-weight: bold;">₹ 799 <strike>₹1799</strike> </div>
+            <button class="btn btn-primary" onclick="addToCart('Amoxicillin')">Add To Cart</button>
+        </div>
+        <!-- Product 3 -->
+        <div class="product">
+            <img src="public/images/pharma3.jpg" alt="Losartan" width="180" height="270">
+            <div>
+                <span style="color: goldenrod;">
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                </span>
+                <span>4.1|(2.6k)</span>
+            </div>
+            <div>Losartan</div>
+            <div style="font-weight: bold;">₹ 899 <strike>₹1799</strike> </div>
+            <button class="btn btn-primary" onclick="addToCart('Losartan')">Add To Cart</button>
+        </div>
+        <!-- Additional Products -->
+        <div class="product">
+            <img src="public/images/pharma4.jpg" alt="Diazepam" width="180" height="270">
+            <div>
+                <span style="color: goldenrod;">
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                </span>
+                <span>4.1|(2.6k)</span>
+            </div>
+            <div>Diazepam</div>
+            <div style="font-weight: bold;">₹ 499 <strike>₹799</strike> </div>
+            <button class="btn btn-primary" onclick="addToCart('Diazepam')">Add To Cart</button>
+        </div>
+        <div class="product">
+            <img src="public/images/pharma5.jpg" alt="Clonezon" width="180" height="270">
+            <div>
+                <span style="color: goldenrod;">
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                </span>
+                <span>4.1|(2.6k)</span>
+            </div>
+            <div>Clonezon</div>
+            <div style="font-weight: bold;">₹ 499 <strike>₹1299</strike> </div>
+            <button class="btn btn-primary" onclick="addToCart('Clonezon')">Add To Cart</button>
+        </div>
+        <div class="product">
+            <img src="public/images/pharma6.jpg" alt="vokakyy" width="180" height="270">
+            <div>
+                <span style="color: goldenrod;">
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                </span>
+                <span>4.7|(2.6k)</span>
+            </div>
+            <div>vokakyy</div>
+            <div style="font-weight: bold;">₹ 699 <strike>₹999</strike> </div>
+            <button class="btn btn-primary" onclick="addToCart('vokakyy')">Add To Cart</button>
+        </div>
+        <div class="product">
+            <img src="public/images/pharma7.jpg" alt="Clonazepam" width="180" height="270">
+            <div>
+                <span style="color: goldenrod;">
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                </span>
+                <span>4.1|(2.6k)</span>
+            </div>
+            <div>Clonazepam</div>
+            <div style="font-weight: bold;">₹ 799 <strike>₹1399</strike> </div>
+            <button class="btn btn-primary" onclick="addToCart('Clonazepam')">Add To Cart</button>
+        </div>
+        <div class="product">
+            <img src="public/images/pharma8.jpg" alt="Tramadol" width="180" height="270">
+            <div>
+                <span style="color: goldenrod;">
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                </span>
+                <span>4.1|(2.6k)</span>
+            </div>
+            <div>Tramadol</div>
+            <div style="font-weight: bold;">₹ 899 <strike>₹1299</strike> </div>
+            <button class="btn btn-primary" onclick="addToCart('Tramadol')">Add To Cart</button>
+        </div>
+        <div class="product">
+            <img src="public/images/pharma9.jpg" alt="Cetirizene"[_{{{CITATION{{{_1{](https://github.com/fatah666/pw2020_193040174/tree/f25996e1b2e230388f59d86dfda44ca763ff0292/praktikum%2Fp7_pw_193040174%2Flatihan7b%2Findex.php)[_{{{CITATION{{{_2{](https://github.com/mrzkypryg/MUHAMMAD-RIZKY-PRAYOGA_201401024_UAS-PW-1/tree/c361bf5896a0e697a1dd01e67b3fc1abc15208a6/about.php)

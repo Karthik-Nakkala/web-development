@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../../Hacker-rank questions"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "medical store"
+	}
+}
