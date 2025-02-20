@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+ 
+</head>
+<body class="container-fluid bg-danger" >
+    
+
+    
+        <div >
+            <img src="../public/images/kfctop.png" width="100%" height="200px">
+
+        </div>
+        <div class="accordion" id="come">
+            <div class="accordion-item">
+                <div class="accordion-header"></div>
+                <button type="button" class="btn btn-danger w-100" data-bs-target="#customer" data-bs-toggle="collapse">Customers Details</button>
+            </div>
+            <div class="accordion-collapse collapse" data-bs-parent="#come" id="customer">
+                
+                <lable style="font-weight: bold;">Customer Name</lable>
+                <input type="text" name="customer details" class="w-100">
+                <br>
+                <lable style="font-weight: bold;">MobileNumber</lable>
+                <input type="text" name="customer details"  class="w-100">
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-header"></div>
+                <button type="button" class="btn btn-danger w-100" data-bs-target="#Meal" data-bs-toggle="collapse">Select Your Meal</button>
+            </div>
+            <div class="accordion-collapse collapse" data-bs-parent="#come" id="Meal">
+                <div class="d-flex flex-row justify-content-evenly" >
+                    <div>
+                        <img src="../public/images/omgb1.png" width="200px" height="200px"><br>
+                        <input type="checkbox"  name="kart" >
+                        <lable style="font-weight: bold;">OMG BURGER <span class="bi bi-currency-dollar"></span></lable>
+                        
+                    </div>
+                    
+                    <div>
+                        <img src="../public/images/krusher.png" width="200px" height="200px"><br>
+                        <input type="checkbox" name="kart" >
+                        <lable style="font-weight: bold;">Coco-Cola <span class="bi bi-currency-dollar"></span></lable>
+                    </div>
+                </div>
+                </div>
+        </div>
+        <div class="modal fade" id="cheakout">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header ">
+                       <h2 class="text-danger" style="font-weight: bold; font-size: 20px;">Your Bill Summary</h2>
+                       
+                        <button class="btn btn-close" data-bs-dismiss="modal"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div style="font-weight: bold;">
+                                <div>Customer Name</div>
+                                <div>Mobile</div>
+                                <div>Meal</div>
+                                <div>Add onns</div>
+                                <div>Total</div>
+                            </div>
+                         </div>   
+                            <div class="modal-footer">
+                                
+                            </div>
+                        </div>
+                    
+                </div>
+               
+            </div>
+            <div style="text-align: center;">
+                <button class="btn btn-danger" data-bs-target="#cheakout" data-bs-toggle="modal">Buy-Now</button>
+            </div>
+
+    </div>
+    <script src="../node_modules/jquery/dist/jquery.js"></script>
+                <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+                
+</body>
+</html>
